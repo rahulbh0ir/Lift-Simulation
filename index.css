@@ -3,9 +3,18 @@
     margin: auto;
     margin-top: 10%;  
 }
+#content{
+    display: flex;
+}
 button{
     border: none;
     border-radius: 7px;
+}
+#door{
+    margin-left: 50%;
+    width: 75px;
+    height: 150px;
+    background-color: lightseagreen;
 }
 #up{
     margin-top: 2px;
@@ -27,6 +36,7 @@ hr{
     width: 75px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 5px;
 }
 #info{
