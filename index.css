@@ -3,17 +3,28 @@
     margin: auto;
     margin-top: 10%;  
 }
+#floor{
+    height: 200px;
+}
 #content{
     display: flex;
+    height: 130px;
 }
 button{
     border: none;
     border-radius: 7px;
 }
-#door{
+/* #door{
     margin-left: 50%;
     width: 75px;
-    height: 150px;
+    height: 100px;
+    background-color: lightseagreen;
+} */
+#lift{
+    border-radius: 7px;
+    margin-left: 5%;
+    width: 90px;
+    height: 130px;
     background-color: lightseagreen;
 }
 #up{
