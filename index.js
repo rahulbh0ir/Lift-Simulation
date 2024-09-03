@@ -3,15 +3,23 @@ let lift = document.getElementById("lift");
 let keyFrames = document.createElement("style");
 
 let floor = document.getElementById("floor");
+let main = document.getElementById("main") 
 
+// let height = 0
 let from = 0 
-let to = 200
+let to = 400
 
 function call() {
     
     console.log("Called")
 
-    let top = floor.offsetTop;
+    let maintop = main.offsetHeight
+    console.log(maintop)
+    
+    let currentfloor = floor.offsetTop
+    console.log(currentfloor)
+
+    let top = maintop - currentfloor;
     console.log(top)
 
     
