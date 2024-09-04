@@ -3,29 +3,30 @@ let lift = document.getElementById("lift");
 let keyFrames = document.createElement("style");
 
 let floor = document.getElementById("floor");
-let main = document.getElementById("main") 
+let main = document.getElementById("main");
 
-// let height = 0
+
 let from = 0 
-let to = 400
+let to = 0
 
-function call() {
+function call(element) {
     
-    console.log("Called")
-
-    let maintop = main.offsetHeight
-    console.log(maintop)
+    console.log("Clicked")
     
-    let currentfloor = floor.offsetTop
-    console.log(currentfloor)
-
-    let top = maintop - currentfloor;
-    console.log(top)
-
+    var parent = element.parentNode;
+    console.log(parent.id);
     
+    var content = parent.querySelector("div");
+    console.log(content.id);
+
+
+    let called = floor2.offsetTop - 40
+    console.log(called)
+    
+    //Animation
     keyFrames.innerHTML = `@keyframes move{
     0%{top: ${from}px;}
-    100%{top: ${to}px`;
+    100%{top: ${called}px`;
 
     lift.appendChild(keyFrames)
     

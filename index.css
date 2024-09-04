@@ -1,13 +1,18 @@
 #main {
     width: 80%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 #floor {
     height: 200px;
 }
-
+#floor1 {
+    height: 200px;
+}
+#floor2 {
+    height: 200px;
+}
 #content {
     display: flex;
     height: 130px;
