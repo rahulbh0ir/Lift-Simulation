@@ -7,22 +7,19 @@ let main = document.getElementById("main");
 
 
 let from = 0 
-let to = 0
+let called = 0
+let current = 0
 
 function call(element) {
     
     console.log("Clicked")
     
     var parent = element.parentNode;
-    // console.log(parent.id);
-    
     var x = parent.parentNode
-    console.log(x)
+    current = x.parentNode
 
-    var current = x.parentNode
-    console.log(current.id)
 
-    let called = current.offsetTop - 40
+    called = current.offsetTop - 40
     console.log(called)
 
     
@@ -32,7 +29,5 @@ function call(element) {
     100%{top: ${called}px`;
 
     lift.appendChild(keyFrames)
-
-    
     
 }
