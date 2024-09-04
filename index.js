@@ -14,20 +14,25 @@ function call(element) {
     console.log("Clicked")
     
     var parent = element.parentNode;
-    console.log(parent.id);
+    // console.log(parent.id);
     
-    var content = parent.querySelector("div");
-    console.log(content.id);
+    var x = parent.parentNode
+    console.log(x)
 
+    var current = x.parentNode
+    console.log(current.id)
 
-    let called = floor2.offsetTop - 40
+    let called = current.offsetTop - 40
     console.log(called)
+
     
-    //Animation
+    //Animation----
     keyFrames.innerHTML = `@keyframes move{
     0%{top: ${from}px;}
     100%{top: ${called}px`;
 
     lift.appendChild(keyFrames)
+
+    
     
 }
