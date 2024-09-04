@@ -2,8 +2,8 @@
 let lift = document.getElementById("lift");
 let keyFrames = document.createElement("style");
 
-let floor = document.getElementById("floor");
-let main = document.getElementById("main");
+// let floor = document.getElementById("floor");
+// let main = document.getElementById("main");
 
 
 let from = 0 
@@ -20,7 +20,7 @@ function call(element) {
 
 
     called = current.offsetTop - 40
-    console.log(called)
+    // console.log(called)
 
     
     //Animation----
@@ -29,5 +29,11 @@ function call(element) {
     100%{top: ${called}px`;
 
     lift.appendChild(keyFrames)
+
+    
+
+    console.log(from)
+    console.log(called)
+
     
 }
