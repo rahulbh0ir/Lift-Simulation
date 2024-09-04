@@ -1,11 +1,7 @@
 
 let lift = document.getElementById("lift");
 let keyFrames = document.createElement("style");
-
-// let floor = document.getElementById("floor");
-// let main = document.getElementById("main");
-
-
+            
 let from = 0 
 let called = 0
 let current = 0
