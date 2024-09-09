@@ -1,27 +1,29 @@
-
-
-#option{
+#option {
     margin: auto;
     height: 140px;
     text-align: center;
 }
-input{
+
+input {
     height: 30px;
 }
-input[type=number]{
-    text-align: center;
-}
-::placeholder{
+
+input[type=number] {
     text-align: center;
 }
 
-#go{
+::placeholder {
+    text-align: center;
+}
+
+#go {
     margin-top: 20px;
     width: 60px;
     height: 40px;
     background-color: lightpink;
     color: white;
 }
+
 #main {
     width: 80%;
     margin: auto;
@@ -30,8 +32,9 @@ input[type=number]{
 
 #floor {
     height: 200px;
-    
+
 }
+
 #content {
     display: flex;
     height: 130px;

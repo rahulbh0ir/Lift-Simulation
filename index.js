@@ -20,7 +20,7 @@ function go() {
 
 
     for (i = 0; i < inputVaule; i++) {
-        
+
         console.log(i)
         const add = document.createElement('div');
         add.innerHTML =
