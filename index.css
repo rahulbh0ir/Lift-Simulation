@@ -46,7 +46,7 @@ button {
 }
 
 #lift {
-    border-radius: 7px;
+    border-radius: 5px;
     margin-left: 5%;
     width: 90px;
     height: 130px;
@@ -59,12 +59,14 @@ button {
 }
 
 #up {
+    color: black;
     margin-top: 2px;
     height: 30px;
     background-color: greenyellow;
 }
 
 #down {
+    color: black;
     margin-top: 10px;
     height: 30px;
     background-color: lightsalmon;
