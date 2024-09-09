@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
+
+    <style></style>
+
 </head>
 
 <body>
+
+    <div id="option">
+        <h2> Enter number of Floors</h2>
+            <input id="input" type="number" value= 3 />
+            <br>
+            <button type="submit" id="go" onclick=go() >Go</button>
+        
+    </div>
+
     <div id="main">
 
         <div id="floor">
@@ -18,38 +30,11 @@
                     <button id="down" onclick=call(this)>Down</button>
                 </div>
                 <div id="lift">
-                    <!-- actual lift -->
                 </div>
             </div>
             <div id="info">
                 <hr>
-                <p>Floor 1</p>
-            </div>
-        </div>
-
-        <div id="floor">
-            <div id="content">
-                <div id="btn">
-                    <button id="up" onclick=call(this)>Up</button>
-                    <button id="down" onclick=call(this)>Down</button>
-                </div>
-            </div>
-            <div id="info">
-                <hr>
-                <p>Floor 2</p>
-            </div>
-        </div>
-
-        <div id="floor">
-            <div id="content">
-                <div id="btn">
-                    <button id="up" onclick=call(this)>Up</button>
-                    <button id="down" onclick=call(this)>Down</button>
-                </div>
-            </div>
-            <div id="info">
-                <hr>
-                <p>Floor 3</p>
+                <p>Ground</p>
             </div>
         </div>
 
