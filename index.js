@@ -1,27 +1,30 @@
 
 let lift = document.getElementById("lift");
-
+let main = document.getElementById("main");
 let keyFrames = document.createElement("style");
-// let input = document.getElementById("input").value;
 
-// let from = 0
-// let called = 0
+let from = 0
+let called = 0
 let current = 0
+
 
 function go() {
 
     // location.href = "main.html";
+
     let input = document.getElementById("input").value;
 
 
     console.log("go")
+
     inputVaule = Number(input)
     console.log(inputVaule)
 
 
     for (i = 0; i < inputVaule; i++) {
 
-        console.log(i)
+        let k = inputVaule - i
+
         const add = document.createElement('div');
         add.innerHTML =
 
@@ -34,13 +37,34 @@ function go() {
             </div>
             <div id="info">
                 <hr>
-                <p>Floor ${i}</p>
+                <p>Floor ${k}</p>
             </div>
         </div>`;
 
         document.getElementById("main").appendChild(add);
 
     }
+
+    const add = document.createElement('div');
+    add.innerHTML =
+
+        ` <div id="floor">
+            <div id="content">
+                <div id="btn">
+                    <button id="up" onclick=call(this)>Up</button>
+                </div>
+                <div id="lift">
+                </div>
+            </div>
+            <div id="info">
+                <hr>
+                <p>Ground</p>
+            </div>
+        </div>`;
+
+    document.getElementById("main").appendChild(add);
+
+
 }
 
 
@@ -48,16 +72,16 @@ function go() {
 function call(element) {
 
     console.log("Clicked")
-    let from = 0
-    let called = 0
+
+    var height = main.offsetHeight;
 
     var parent = element.parentNode;
     var x = parent.parentNode
     current = x.parentNode
 
+    // console.log(current,current.offsetTop)
 
-    called = current.offsetTop - 200
-    console.log(called)
+    called = current.offsetTop - height
 
 
     //Animation----
