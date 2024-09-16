@@ -54,6 +54,7 @@ button {
     position: relative; 
     transition: margin-top;
     transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
 
 #up {
