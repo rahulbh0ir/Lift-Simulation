@@ -51,11 +51,9 @@ button {
     width: 90px;
     height: 130px;
     background-color: lightseagreen;
-    position: relative;
-    animation-name: move;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
+    position: relative; 
+    transition: margin-top;
+    transition-duration: 2s;
 }
 
 #up {

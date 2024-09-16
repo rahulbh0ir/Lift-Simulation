@@ -4,7 +4,7 @@ let main = document.getElementById("main");
 let keyFrames = document.createElement("style");
 
 let from = 0
-let called = 0
+let calledFloor = 0
 let current = 0
 
 
@@ -15,10 +15,10 @@ function go() {
     let input = document.getElementById("input").value;
 
 
-    console.log("go")
+    // console.log("go")
 
     inputVaule = Number(input)
-    console.log(inputVaule)
+    // console.log(inputVaule)
 
 
     for (i = 0; i < inputVaule; i++) {
@@ -71,33 +71,17 @@ function go() {
 
 function call(element) {
 
-    console.log("Clicked")
-
     var height = main.offsetHeight;
 
-    var parent = element.parentNode;
-    var x = parent.parentNode
-    current = x.parentNode
+    var parent = element.parentNode.parentNode.parentNode;
 
-    // console.log(current,current.offsetTop)
-
-    called = current.offsetTop - height
+    calledFloor = parent.offsetTop - height
 
 
     //Animation----
-    var keyFrames = document.createElement("style")
-    // keyFrames.textContent = styles
 
-    keyFrames.innerHTML = `@keyframes move{
-    0%{top: ${from}px;}
-    100%{top: ${called}px`;
+    console.log(calledFloor)
+    document.getElementById("lift").style.marginTop = `${calledFloor}px`;
 
-    document.head.appendChild(keyFrames)
-
-    from = called
-
-    console.log(from)
-    console.log(called)
-
-
+    
 }
