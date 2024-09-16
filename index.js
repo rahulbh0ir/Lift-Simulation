@@ -10,15 +10,12 @@ let current = 0
 
 function go() {
 
-    // location.href = "main.html";
-
     let input = document.getElementById("input").value;
 
 
-    // console.log("go")
+    console.log("Go Clicked")
 
     inputVaule = Number(input)
-    // console.log(inputVaule)
 
 
     for (i = 0; i < inputVaule; i++) {
@@ -72,11 +69,9 @@ function go() {
 function call(element) {
 
     var height = main.offsetHeight;
-
     var parent = element.parentNode.parentNode.parentNode;
 
     calledFloor = parent.offsetTop - height
-
 
     //Animation----
 
