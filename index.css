@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+#userInfo{
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+
+}
 input {
     height: 30px;
 }
@@ -39,13 +45,16 @@ input[type=number] {
     display: flex;
     height: 130px;
 }
-
+#ground{
+    display: flex;
+    margin-left: 30px;
+}
 button {
     border: none;
     border-radius: 7px;
 }
 
-#lift {
+.lift {
     border-radius: 5px;
     margin-left: 5%;
     width: 90px;
@@ -54,7 +63,7 @@ button {
     position: relative; 
     transition: margin-top;
     transition-duration: 2s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: linear;
 }
 
 #up {
@@ -89,8 +98,3 @@ hr {
 #info {
     display: flex;
 }
-
-/* @keyframes move{
-    0%{top: 0px;}
-    100%{top:200px;}
-} */
