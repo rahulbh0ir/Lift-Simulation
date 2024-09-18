@@ -101,9 +101,9 @@ function call(element) {
 
 
 
-    //Animation----
 
-    // console.log(calledFloor)
+    
+    //Animation----
     console.log(secx)
 
     document.getElementById("0").style.marginTop = `${calledFloor}px`;
