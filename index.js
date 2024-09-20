@@ -4,13 +4,15 @@ let main = document.getElementById("main");
 let keyFrames = document.createElement("style");
 let options = document.getElementById("option");
 
-let from = 0
-let calledFloor = 0
-let current = 0
-let sec = 0
+let from = 0;
+let calledFloor = 0;
+let current = 0;
+let sec = 0;
+let liftMoving = false;
+
 
 function go() {
-    document.get
+
     let inputFloors = document.getElementById("input1").value;
     let inputLifts = document.getElementById("input2").value;
 
@@ -65,19 +67,20 @@ function go() {
             </div>
         </div>`;
 
- 
+
 
     document.getElementById("main").appendChild(add);
+
     for (j = 0; j < Liftvalue; j++) {
-        
+
         let l = j;
-        
+
         const addlift = document.createElement('div');
         addlift.innerHTML =
             `<div class="lift" id="${l}">
              </div>`;
 
-        addlift.style.marginLeft = "40px";
+        addlift.style.marginLeft = "30px";
         document.getElementById("ground").appendChild(addlift)
     }
 
@@ -88,6 +91,7 @@ function go() {
 
 function call(element) {
 
+    
     var height = main.offsetHeight;
     console.log(height)
 
@@ -102,13 +106,17 @@ function call(element) {
 
 
 
-    
+
     //Animation----
+    
     console.log(secx)
 
-    document.getElementById("0").style.marginTop = `${calledFloor}px`;
-    document.getElementById("0").style.transitionDuration = `${secx}s`;
+    if (liftMoving === false) {
+       
+        document.getElementById("0").style.marginTop = `${calledFloor}px`;
+        document.getElementById("0").style.transitionDuration = `${secx}s`;
 
+    }
 
     sec = calledFloor
 }
